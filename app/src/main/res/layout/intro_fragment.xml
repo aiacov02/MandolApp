@@ -1,0 +1,71 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    android:isScrollContainer="false"
+    android:background="#151527"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgImage"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--tools:ignore="ContentDescription" />-->
+
+                <pl.droidsonroids.gif.GifTextView
+                    android:id="@+id/gifImage"
+                    android:layout_width="170dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                     />
+            </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>

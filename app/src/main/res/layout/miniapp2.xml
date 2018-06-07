@@ -1,0 +1,143 @@
+<RelativeLayout android:id="@+id/relativeLayoutReportFacebook"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutFields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/textView3"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id  ="@+id/txtTextLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text: "/>
+
+            <TextView
+                android:id  ="@+id/txtText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutText"
+            >
+
+            <TextView
+                android:id  ="@+id/SelectBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category: "/>
+
+            <Button android:id="@+id/create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Category"
+                style="?android:attr/spinnerStyle"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAuthority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/linearLayoutCategory"
+            >
+
+            <TextView
+                android:id  ="@+id/SelectBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Authority: "/>
+
+            <Button android:id="@+id/create2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Authority"
+                style="?android:attr/spinnerStyle"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutFields"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnReport"
+            android:textColor="#FFFFFF"
+            android:text="Report Now"
+            android:textSize="16dp"
+            android:background="@drawable/buttonshape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000"
+            android:shadowDx="3"
+            android:shadowDy="2"
+            android:shadowRadius="8"
+            />
+
+        <Button
+            android:id="@+id/btnSaveLater"
+            android:layout_marginTop="1dp"
+            android:textColor="#FFFFFF"
+            android:text="Save"
+            android:textSize="16dp"
+            android:background="@drawable/buttonshape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000"
+            android:shadowDx="3"
+            android:shadowDy="2"
+            android:shadowRadius="8"
+            />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_marginTop="1dp"
+            android:textColor="#FFFFFF"
+            android:text="Cancel"
+            android:textSize="16dp"
+            android:background="@drawable/buttonshape2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000"
+            android:shadowDx="3"
+            android:shadowDy="2"
+            android:shadowRadius="8"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

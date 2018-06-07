@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="add_values">Add values to the chart</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="add">Add</string>
+    <string name="new_series">New series</string>
+
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">gcnlJpaaYVHVT1UQ9CcIUGDpW</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">UCcCrJAFAOyTPKJinvs5NShwgkvVFpjOZromPNYOiuBGHjJOWk</string>
+
+
+    <string name="app_name">Mandolapp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_nav">NavActivity</string>
+
+    <string name="navigation_drawer_open">Open Menu</string>
+    <string name="navigation_drawer_close">Close Menu</string>
+    <string name="title_activity_drawer">Menu</string>
+    <string-array name="planets_array">
+        <item>Report</item>
+        <item>About</item>
+        <item>Statistics</item>
+        <item>Saved Reports</item>
+        <item>Report History</item>
+        <item>Help</item>
+        <item>Settings</item>
+
+
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="intro_message">Hello World</string>
+    <string name="navigationdraweractivity_title">Navigation Drawer Example</string>
+    <string name="navigationdraweractivity_description">This example illustrates a common usage of the DrawerLayout widget in the Android
+            support library.</string>
+
+    <string-array name="category_array">
+        <item>Religious</item>
+        <item>Gender</item>
+        <item>Sexual</item>
+        <item>Class</item>
+        <item>Politics</item>
+        <item>Ethnicity</item>
+        <item>Nationality</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="authority_array">
+        <item>Authority 1</item>
+        <item>Authority 2</item>
+        <item>Authority 3</item>
+
+
+    </string-array>
+
+    <string-array name="search_app_array">
+        <item>Twitter</item>
+        <item>Facebook</item>
+        <item>Browser</item>
+        <item>Picture</item>
+    </string-array>
+
+    <string-array name="search_field_array">
+        <item>Date</item>
+        <item>Description</item>
+    </string-array>
+
+
+    <string name="select_string">Select an item</string>
+
+    <string name="intro_slide1">
+        Welcome to Mandolapp. The application designed by the University of Cyprus to help the
+        fight against online hate speech. Swipe left to begin your intro tutorial.
+    </string>
+
+    <string name="intro_slide2">
+        Hate speech is public expressions which spread, incite, promote or justify hatred,
+        discrimination or hostility towards a specific group. They contribute to a general climate
+        of intolerance which in turn makes attacks more probable against those given groups. - ILGA Europe
+    </string>
+
+    <string name="intro_slide3">
+        Using Mandolapp you can report images from your library, as well as Twitter content and public
+        Facebook posts from their respective application. You can also report any other content you may encounter using an internet browser such as posts
+        or comments that may in your opinion be related to hate speech, provided they have a link.
+    </string>
+
+    <string name="intro_slide4">
+        To begin, open Mandolapp and press the Start Mandolapp Bubble button. A bubble will appear telling you
+        what you can do next.\n\n\n\n\n\n\n\n\n
+    </string>
+
+    <string name="intro_slide5">
+        To report a picture from your library, press the button provided and press on a picture from your
+        library.\n\n\n\n\n\n\n\n\n
+    </string>
+
+    <string name="intro_slide5_1">
+        Next, choose a category for the report and the authorities you wish to send it to. More
+        details about the authorities can be found in the help section. You can also choose to give
+        your report an optional description.\n\n\n\n\n\n\n\n\n
+    </string>
+
+    <string name="intro_slide6">
+        To report a post open the corresponding app(Twitter, Facebook, or an Internet Browser). The bubble will know which app you just opened and
+        tell you what to do next.\n\n\n\n\n\n\n\n\n
+    </string>
+
+    <string name="intro_slide6_1">
+        Copy the link of a post by following the instructions of the bubble.
+        Then, the bubble will notify you that it has the link of the post. Choose a category, an authority and optionally give a description. You
+        can also choose to save the report for later, without having to choose a category or an authority at that moment.\n\n\n\n\n\n\n\n\n
+    </string>
+
+    <string name="intro_slide7">
+        If you want to get rid of the bubble you can get it back at any moment by pressing on the Mandolapp
+        notification without having to visit the main app again. You can completely get rid of the notification
+        by pressing the Stop Mandolapp button from the main app.\n\n\n\n\n\n\n\n\n
+    </string>
+
+    <string name="intro_slide8">
+        You can also navigate to different sections of the app using the slide in menu on the left.
+        More helpful and detailed information can be found in the help section.\n\n\n\n\n\n\n\n\n
+    </string>
+
+
+    <string name="about">
+        Mandolapp is an application designed and developed by the University of Cyprus to help in
+        the fight against online hate speech. This application was developed under the Mandola
+        project. Mandola is a project which runs from 2014 to 2020 and is funded by the Rights, Equality
+        and Citizenship (REC) Programme of the EU Commission.\n The Mandolapp application is designed to
+        give you the ability to anonymously report hate speech content you come across while on the internet, while
+        striving to provide you a very smooth and convenient user experience.
+    </string>
+
+    <string-array name="category_explanation">
+        <item>Religious:\nContent that may present hate speech towards a person’s religion.</item>
+        <item>Gender:\nContent that may present hate speech towards a gender (e.g. women).</item>
+        <item>Sexual:\nContent that may present hate speech towards a person’s sexual orientation, sexual harassment or sexual content that is inappropriate.</item>
+        <item>Class:\n
+        Content that may present inter-class or inter-school hate speech between students or other members of the school community.</item>
+        <item>Politics:\nContent that may present hate speech towards politicians or political ideas.</item>
+        <item>Ethnicity:\nContent that may present hate speech towards an ethnic group (e.g. black people).</item>
+        <item>Nationality:\nContent that may present hate speech towards people from a different nation.</item>
+        <item>Other:\nContent that doesn’t belong in any other category</item>
+    </string-array>
+
+    <string-array name="authority_explanation">
+        <item>Authority 1:\nAuthority 1 explanation</item>
+        <item>Authority 2:\nAuthority 2 explanation</item>
+        <item>Authority 3:\nAuthority 3 explanation</item>
+
+
+    </string-array>
+
+    <string name="TwitterInstructions">
+        Using Mandolapp you have the ability to report tweets from the Twitter application.
+        You may report any tweet that contains hate speech according to your judgment, even comments
+        of tweets, since every comment is a tweet of itself.\n\n\n
+
+        Step 1:\n
+        Launch Mandolapp bubble
+        \n\n
+        Step 2:\n
+        Open Twitter Application. The bubble will recognize it and provide you with details on what to do next
+        \n\n
+        Step 3:\n
+        Find a tweet you want to report. Press on the arrow on the upper right corner of each tweet. From
+        the menu that will appear press Copy Link to Tweet
+        \n\n
+        Step 4:\n
+        Mandolapp will recognize that you copy the link and provide you with a message. Once you open
+        the bubble you will see the tweet loaded and a form to report.
+        \n\n
+        Step 5:\n
+        You have to choose at least one category that the hate speech belongs to and an authority to send
+        the report. More details for this can be found in the help section. Optionally, you can choose
+        to give a description for the report as well. Once the form is completed, report by simply pressing
+        the Report Now button. If you don\'t want to report at that moment you can choose to save the report
+        to be reported later, without having to complete the form at the time of saving.
+        \n
+
+    </string>
+
+    <string name="FacebookInstructions">
+        Using Mandolapp you have the ability to report posts from the Facebook application.
+        You may report any post that contains hate speech according to your judgment. Please note however
+        that in order to report a facebook post it must be public, meaning that it must be a post
+        the can be seen by everyone and not just be the friends of the person that posted it.\n\n\n
+
+        Step 1:\n
+        Launch Mandolapp bubble
+        \n\n
+        Step 2:\n
+        Open Facebook Application. The bubble will recognize it and provide you with details on what to do next
+        \n\n
+        Step 3:\n
+        Find a post you want to report. Press on the three vertical dots on the upper right corner of each post. From
+        the menu that will appear press Copy Link
+        \n\n
+        Step 4:\n
+        Mandolapp will recognize that you copied the link and provide you with a message. Once you open
+        the bubble you will see the post loaded and a form that must be completed in order to report.
+        \n\n
+        Step 5:\n
+        You have to choose at least one category that the hate speech belongs to and an authority to send
+        the report. More details for this can be found in the help section. Optionally, you can choose
+        to give a description for the report as well. Once the form is completed, report by simply pressing
+        the Report Now button. If you don\'t want to report at that moment you can choose to save the report
+        to be reported later, without having to complete the form at the time of saving.
+        \n
+
+    </string>
+
+    <string name="BrowserInstructions">
+        Using Mandolapp you can report any public content that you may encounter using an internet browser, by copying
+        its link. Therefore in order to report something it must have a public link that is available to you.
+        Such content may range from post or comments on social media or news sites accessed on an internet
+        browser, to whole webpages.\n\n
+
+        Step 1:\n
+        Open an Internet browser application. The bubble will recognize it and provide you with details on what to do next\n
+        Step 2:\n
+        Copy the link of the content you wish to report\n
+        Step 3:\n
+        Mandolapp will recognize that you copy the link and provide you with a message. Once you open
+        the bubble you will see the content loaded and a form that must be completed in order to report.\n
+        Step 4:\n
+        You have to choose at least one category that the hate speech belongs to and an authority to send
+        the report. More details for this can be found in the help section. Optionally, you can choose
+        to give a description for the report as well. Once the form is completed, report by simply pressing
+        the Report Now button. If you don\'t want to report at that moment you can choose to save the report
+        to be reported later, without having to complete the form at the time of saving.
+        \n
+
+    </string>
+
+    <string name="PictureReport">
+        Using Mandolapp you can report pictures from your library.
+
+        Step 1:\n
+        Press the button with the camera icon on the main screen of the bubble\n
+        Step 2:\n
+        You will be redirected to your pictures library. Once there choose a picture by clicking on it.\n
+        Step 3:\n
+        The bubble will open and you will see the selected picture and a form that must be completed in order to report.\n
+        Step 4:\n
+        You have to choose at least one category that the hate speech belongs to and an authority to send
+        the report to. More details for the categories and authorities can be found in the help section. Optionally, you can choose
+        to give a description for the report as well. Once the form is completed, report by simply pressing
+        the Report Now button.
+        \n
+    </string>
+
+    <string-array name="FAQ_array">
+        <item>What is Hate Speech?:\n\nWhile there is no universal comprehensive legal definition of hate speech, it is useful to
+            consider and reflect on the views of the Committee of Ministers of the Council of Europe
+            which has stated, that they consider that “hate speech shall be understood as covering
+            all forms of expression which spread, incite, promote or justify racial hatred,
+            xenophobia, anti-Semitism or other forms of hatred based on intolerance, including:
+            intolerance expressed by aggressive nationalism and ethnocentrism, discrimination and
+            hostility against minorities, migrants and people of immigrant origin”. </item>
+        <item>Is the reporting process really anonymous?:\n\nYes. No information is sent to the authorities about you.</item>
+        <item>What happens after I send a report?:\n\nThe authority you choose to send the report to is solely responsible for the
+        handling of the reports.</item>
+        <item>Why does the application ask for the Usage Access Permission at the beginning?:\n\n
+            The application aims at providing you the best possible user experience. The only reason we ask for that permission
+            is so the application can understand that you launched Twitter, Facebook, or Internet browser application. That way the application
+            will catch content you copy only inside those applications and it will be able to give you specific details for each
+            application you might open. The application DOES NOT use any other information about the usage of your phone
+            or your application whatsoever.
+        </item>
+        <item>Can the report be in languages other than english?:\n\n
+        Yes you can report posts in any language. However, keep in mind that the authority you send the report to might not
+        support or understand you language</item>
+        <item>How do I know what category of Hate Speech refers to?:\n\n
+        You can find more details about what each category of Hate Speech refers to in the help section</item>
+        <item>How do I know who each authority is?:\n\n
+        You can find more details about each authority in the help section</item>
+        <item>There is a notification on my phone that won\'t go away. What do I do?\n\n
+        In order to provide you the best possible user experience the notification is always open so that when
+        you discard the application bubble you can relaunch it from anywhere simply by pressing on the notification.
+        If you want to stop the notification along with the application just press the STOP MANDOLAPP button from
+        the main screen of the main application. If you want to be able to use the application without the notification
+        you must choose to disable notifications from the Mandolapp application in your settings.</item>
+        <item>The application doesn\'t work properly. What do I do?:\n\n
+        If you think that something doesn\'t work as expected you can always press the STOP MANDOLAPP button from
+        the main screen of the main application and then start the bubble again.</item>
+    </string-array>
+
+
+
+</resources>

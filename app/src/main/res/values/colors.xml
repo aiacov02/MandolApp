@@ -1,0 +1,17 @@
+<resources>
+    <color name="teal">#009688</color>
+    <color name="black_87">#DD000000</color>
+    <color name="black_54">#89000000</color>
+    <color name="transparent">#80000000</color>
+    <color name="white">#ffff</color>
+    <color name="light_slate_blue">#736AFF</color>
+    <color name="red">#FF0000</color>
+    <color name="dark_grey">#696969</color>
+    <color name="orange_custom">#FF7009</color>
+    <color name="sea_green">#2E8B57</color>
+    <color name="facebook_blue">#3b5998</color>
+    <color name="twitter_blue">#00aced</color>
+    <color name="brown">#693824</color>
+
+
+</resources>

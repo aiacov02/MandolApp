@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cy.ac.ucy.cs.mandolapp"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".MyApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="Mandolapp">
+        <activity
+            android:name=".MyActivity"
+            android:label="Mandolapp"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.tooleap.sdk.TooleapAppService" />
+        <service
+            android:name="com.tooleap.sdk.TooleapUIService"
+            android:exported="true"
+            android:process=":UIService">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.BIND_UI_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.tooleap.sdk.TooleapReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_ACTION" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Receiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="hello" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.tooleap.sdk.apiKey"
+            android:value="635DE0F0CEA3D9F772C" />
+
+        <activity
+            android:name=".ReportActivities.NavigationDrawerActivity"
+            android:label="@string/title_activity_drawer"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tooleap.sdk.TooleapProxyActivity"
+            android:taskAffinity=".tooleapProxy" />
+        <activity
+            android:name=".ReportActivities.ReportTwitterFirst"
+            android:label="@string/title_activity_drawer"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportActivities.ReportFacebookFirst"
+            android:label="@string/title_activity_drawer"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportActivities.ReportFacebook"
+            android:label="@string/title_activity_drawer"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportActivities.ReportPhoto"
+            android:label="@string/title_activity_drawer"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportActivities.ReportTwitterNew"
+            android:label="@string/title_activity_drawer"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportActivities.ReportBrowserFirst"
+            android:label="@string/title_activity_drawer"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportActivities.ReportBrowser"
+            android:label="@string/title_activity_drawer"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SavedReportsActivities.SavedReports"
+            android:label="@string/title_activity_drawer"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SavedReportsActivities.SavedReportsTwitter"
+            android:label="@string/title_activity_drawer"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SavedReportsActivities.SavedReportsFacebook"
+            android:label="Saved Reports"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SavedReportsActivities.SavedReportsBrowser"
+            android:label="Saved Reports"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportsHistoryActivities.ReportHistory"
+            android:label="Report History"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportsHistoryActivities.ReportHistoryTwitter"
+            android:label="Report History"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportsHistoryActivities.ReportHistoryFacebook"
+            android:label="Report History"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportsHistoryActivities.ReportHistoryBrowser"
+            android:label="Report History"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReportsHistoryActivities.ReportHistoryPhoto"
+            android:label="Report History"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StatisticsActivities.Statistics"
+            android:label="Statistics"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivities.Settings"
+            android:label="Statistics"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutActivities.About"
+            android:label="About"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelpActivities.Help"
+            android:label="Help"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelpActivities.HelpReportInstructions"
+            android:label="Help"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelpActivities.HelpCategory"
+            android:label="Help"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelpActivities.HelpAuthorities"
+            android:label="Help"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelpActivities.HelpTwitter"
+            android:label="Help"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelpActivities.HelpFAQ"
+            android:label="Help"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelpActivities.HelpFacebook"
+            android:label="Help"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelpActivities.HelpInternetBrowser"
+            android:label="Help"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HelpActivities.HelpPicture"
+            android:label="Help"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap"
+            android:theme="@style/AppTheme.Translucent">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Intro.IntroActivity"
+                    android:label="Mandolapp"
+                    android:theme="@style/Theme.AppCompat"/>
+    </application>
+
+</manifest>
