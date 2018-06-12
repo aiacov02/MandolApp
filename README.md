@@ -16,5 +16,5 @@ An android application created under the framework of the Mandola EU project by 
 ___
             
 <p align="center">
-            ##<strong>Copyright (c) 2018 University of Cyprus
+            ##Copyright (c) 2018 University of Cyprus
             </p>
