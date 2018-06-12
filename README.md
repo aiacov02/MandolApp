@@ -7,4 +7,9 @@ An android application created under the framework of the Mandola EU project by 
 1. Launch Android Studio, click **File->Open** and choose parent application directory
 1. Download Tooleap SDK jar from (https://developer.tooleap.com/download/)
 1. Create directory called libs under MandolApp/app and place downloaded jar in MandolApp/app/libs directory
+1. Open AndroidManifest.xml and edit the following code: 
+            <meta-data
+            android:name="com.tooleap.sdk.apiKey"
+            android:value="API_KEY" />
+   adding the API_KEY given by the Tooleap Early Access Program.
 
