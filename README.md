@@ -13,3 +13,5 @@ An android application created under the framework of the Mandola EU project by 
             `android:value="API_KEY" />` 
    adding the API_KEY given by the Tooleap Early Access Program.
 
+            
+                                    **Copyright (c) 2018 University of Cyprus**
