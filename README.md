@@ -1,5 +1,5 @@
 # MandolApp
-An android application created under the framework of the Mandola EU project by the University of Cyprus. Allows the reporting of social media posts containing hate speech to relevant authorities.
+An android application created under the framework of the Mandola EU project for my dissertation project at the University of Cyprus. Allows the reporting of social media posts containing hate speech to relevant authorities.
 
 **Instructions to use**
 
